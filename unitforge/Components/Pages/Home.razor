@@ -35,7 +35,7 @@
                 </tr>
                 <tr>
                     <td style="padding-top:8px;">
-                        <select class="form-select ucselect" id="calFrom" size="11" @onchange="OnUnitChangeFrom">
+                        <select class="form-select ucselect" id="calFrom" size="11" @onchange="OnUnitChangeFrom" placeholder="Select a type">
                             @foreach (var unit in _fromUnits)
                             {
                                 <option value="@unit">@unit</option>
@@ -44,7 +44,7 @@
                     </td>
                     <td></td>
                     <td style="padding-top:8px;">
-                        <select class="form-select ucselect" id="calTo" size="11" @onchange="OnUnitChangeTo">
+                        <select class="form-select ucselect" id="calTo" size="11" @onchange="OnUnitChangeTo" placeholder="Select a type">
                             @foreach (var unit in _toUnits)
                             {
                                 <option value="@unit">@unit</option>
