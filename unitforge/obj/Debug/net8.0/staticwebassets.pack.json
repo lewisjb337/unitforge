@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\unitforge.bundle.scp.css",
+      "PackagePath": "staticwebassets\\unitforge.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\buttons.css",
+      "PackagePath": "staticwebassets\\buttons.css"
+    },
+    {
+      "Id": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\forms.css",
+      "PackagePath": "staticwebassets\\forms.css"
+    },
+    {
+      "Id": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\images\\unitforge-logo.png",
+      "PackagePath": "staticwebassets\\images\\unitforge-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\table.css",
+      "PackagePath": "staticwebassets\\table.css"
+    },
+    {
+      "Id": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\typography.css",
+      "PackagePath": "staticwebassets\\typography.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.unitforge.props",
+      "PackagePath": "build\\unitforge.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.unitforge.props",
+      "PackagePath": "buildMultiTargeting\\unitforge.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.unitforge.props",
+      "PackagePath": "buildTransitive\\unitforge.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.unitforge.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

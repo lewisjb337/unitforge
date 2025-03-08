@@ -1,0 +1,18 @@
+.info-section[b-cf4hviamsi]{
+    margin: 90px auto 140px auto;
+}
+
+.info-element[b-cf4hviamsi] {
+    padding: 40px !important;
+    background-color: #121519 !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-subtitle[b-cf4hviamsi]{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #B9B9BA !important;
+}

@@ -1,0 +1,78 @@
+﻿.form-select, .dropdown{
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.25) !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px !important;
+    border-left-color: rgba(255, 255, 255, 0.25) !important;
+    border-left-style: solid !important;
+    border-left-width: 1px !important;
+    border-right-color: rgba(255, 255, 255, 0.25) !important;
+    border-right-style: solid !important;
+    border-right-width: 1px !important;
+    border-top-color: rgba(255, 255, 255, 0.25) !important;
+    border-radius: 18px !important;
+    border-top-style: solid !important;
+    border-top-width: 1px !important;
+    box-sizing: border-box !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    cursor: default !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+    color-scheme: dark !important;   
+}
+
+.form-select {
+    padding: 14px 48px 14px 18px !important;
+}
+
+.dropdown{
+    padding: 2px;
+}
+
+[data-bs-theme=dark] .form-select:not([data-bs-theme=light]) option {
+    background-color: #121519 !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 13.2px 16px !important;
+    font-size: calc(1rem* 0.875);
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.7) !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-clip: padding-box;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 16px !important;
+    transition: border-color .15s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: transparent;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 5pt 0.5pt rgb(68, 140, 116) !important;
+    border: 1px solid rgb(68, 140, 116) !important;
+}
+
+.form-control:disabled{
+    background-color: #191C20 !important;
+}
+
+.form-select option:checked {
+    background-color: rgb(68, 140, 116) !important;
+    color: white !important;
+}

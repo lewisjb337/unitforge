@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "typography.css";
+@import "forms.css";
+@import "buttons.css";
+@import "table.css";
+
+body {
+    font-family: "Inter", sans-serif !important;
+    background-color: #191C20 !important;
+    color: #E8E8E8;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #191C20;
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #223934;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #365951;
+}
+
+.card {
+    background: #121519 !important;
+    padding: 20px;
+    color: #FFFFFF;
+}

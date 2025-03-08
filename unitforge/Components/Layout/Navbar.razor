@@ -1,0 +1,59 @@
+﻿<style>
+    .nav-link {
+        text-decoration: none;
+        color: #E8E8E8;
+        font-size: 16px;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+    .nav-link:hover {
+        color: rgb(68, 140, 116);
+    }
+
+    .nav-link.active {
+        color: rgb(68, 140, 116) !important;
+    }
+
+    .nav-link.active .nav-link-text {
+        color: rgb(68, 140, 116) !important;
+    }
+</style>
+
+<nav class="navbar-custom container d-flex mx-auto">
+    <a href="/" class="brand mx-5">
+        <img src="images/unitforge-logo.png" alt="FilesForge Logo" height="60">
+    </a>
+    <ul class="links me-auto mb-2 mb-lg-0">
+        <li>
+            <NavLink class="nav-link" href="/length-converter" Match="NavLinkMatch.All">
+                <span class="nav-link-text">Length</span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink class="nav-link" href="/area-converter" Match="NavLinkMatch.All">
+                <span class="nav-link-text">Area</span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink class="nav-link" href="/volume-converter" Match="NavLinkMatch.All">
+                <span class="nav-link-text">Volume</span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink class="nav-link" href="/weight-converter" Match="NavLinkMatch.All">
+                <span class="nav-link-text">Weight</span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink class="nav-link" href="/temperature-converter" Match="NavLinkMatch.All">
+                <span class="nav-link-text">Temperature</span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink class="nav-link" href="/time-converter" Match="NavLinkMatch.All">
+                <span class="nav-link-text">Time</span>
+            </NavLink>
+        </li>
+    </ul>
+</nav>

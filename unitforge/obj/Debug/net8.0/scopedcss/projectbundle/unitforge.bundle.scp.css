@@ -1,0 +1,52 @@
+/* _content/unitforge/Components/Layout/Footer.razor.rz.scp.css */
+.footer[b-m68at60yg0] {
+    background-color: #121519 !important;
+    margin-top: auto !important;
+}
+
+.footer a[b-m68at60yg0]{
+    color: #B9B9BA;
+}
+/* _content/unitforge/Components/Layout/Information.razor.rz.scp.css */
+.info-section[b-cf4hviamsi]{
+    margin: 90px auto 140px auto;
+}
+
+.info-element[b-cf4hviamsi] {
+    padding: 40px !important;
+    background-color: #121519 !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-subtitle[b-cf4hviamsi]{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #B9B9BA !important;
+}
+/* _content/unitforge/Components/Layout/Navbar.razor.rz.scp.css */
+.brand[b-mgzylmwtyf]{
+    text-decoration: none;
+}
+
+.navbar-custom[b-mgzylmwtyf] {
+    background-color: #121519;
+    border-radius: 15px;
+    margin: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.links[b-mgzylmwtyf] {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+}

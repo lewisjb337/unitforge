@@ -1,0 +1,69 @@
+﻿@page "/volume-converter"
+@using unitforge.Components.Layout
+
+@rendermode InteractiveServer
+
+<PageTitle>UnitForge - Volume Conversion</PageTitle>
+
+<div class="container my-5 text-center text-white">
+    <h1>Volume Converter</h1>
+    <p class="mb-5">Convert from one volume type to another</p>
+
+    <div class="card rounded-5 mx-auto p-3">
+        <h3 class="text-center">Volume</h3>
+        <table class="w-100">
+            <tr>
+                <td><label for="fromVal"><h4>From</h4></label></td>
+                <td></td>
+                <td><label for="toVal"><h4>To</h4></label></td>
+            </tr>
+            <tr>
+                <td><input class="form-control" type="text" id="fromVal" placeholder="Enter a value" @oninput="OnInputChange" /></td>
+                <td></td>
+                <td><input class="form-control" type="text" id="toVal" value="@_outputValue" disabled /></td>
+            </tr>
+            <tr>
+                <td style="padding-top:8px;">
+                    <select class="form-select ucselect" id="calFrom" size="11" @onchange="OnUnitChangeFrom">
+                        @foreach (var unit in _fromUnits)
+                        {
+                            <option value="@unit">@unit</option>
+                        }
+                    </select>
+                </td>
+                <td></td>
+                <td style="padding-top:8px;">
+                    <select class="form-select ucselect" id="calTo" size="11" @onchange="OnUnitChangeTo">
+                        @foreach (var unit in _toUnits)
+                        {
+                            <option value="@unit">@unit</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        @if (!string.IsNullOrEmpty(_inputValue) && !string.IsNullOrEmpty(_outputValue))
+        {
+            <hr />
+            <h2 class="mt-3">
+                @(_inputValue) @(_fromUnit) = @(_outputValue) @(_toUnit)
+            </h2>
+        }
+    </div>
+</div>
+
+<Information></Information>
+
+<script>
+    function clearInputFields() {
+        document.getElementById('fromVal').value = '';
+        document.getElementById('toVal').value = '';
+
+        const fromSelect = document.getElementById('calFrom');
+        const toSelect = document.getElementById('calTo');
+
+        fromSelect.selectedIndex = -1;
+        toSelect.selectedIndex = -1;
+    }
+</script>
