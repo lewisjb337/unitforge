@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\unitforge.csproj",
+      "projectUniqueName": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\unitforge.csproj",
       "projectName": "unitforge",
-      "projectPath": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\unitforge.csproj",
+      "projectPath": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\unitforge.csproj",
       "packagesPath": "C:\\Users\\lewis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\obj\\",
+      "outputPath": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

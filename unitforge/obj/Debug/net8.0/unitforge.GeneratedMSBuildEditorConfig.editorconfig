@@ -9,67 +9,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = unitforge
 build_property.RootNamespace = unitforge
-build_property.ProjectDir = C:\Users\lewis\Documents\Dark Mode Studios\unitforge\unitforge\
+build_property.ProjectDir = C:\Users\lewis\Documents\GitHub\unitforge\unitforge\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lewis\Documents\Dark Mode Studios\unitforge\unitforge
+build_property.MSBuildProjectDirectory = C:\Users\lewis\Documents\GitHub\unitforge\unitforge
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/App.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Layout/MainLayout.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Pages/AreaConversion.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/AreaConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcmVhQ29udmVyc2lvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Pages/Home.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Pages/LengthConversion.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/LengthConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZW5ndGhDb252ZXJzaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Pages/TemperatureConversion.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/TemperatureConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUZW1wZXJhdHVyZUNvbnZlcnNpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Pages/TimeConversion.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/TimeConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUaW1lQ29udmVyc2lvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Pages/VolumeConversion.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/VolumeConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWb2x1bWVDb252ZXJzaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Pages/WeightConversion.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/WeightConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWlnaHRDb252ZXJzaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Routes.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/_Imports.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Layout/Footer.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Layout/Footer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRm9vdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-m68at60yg0
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Layout/Information.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Layout/Information.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcSW5mb3JtYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-cf4hviamsi
 
-[C:/Users/lewis/Documents/Dark Mode Studios/unitforge/unitforge/Components/Layout/Navbar.razor]
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Layout/Navbar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2YmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-mgzylmwtyf

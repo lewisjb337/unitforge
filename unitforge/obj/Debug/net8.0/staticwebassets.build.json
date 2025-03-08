@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "61duhYqP3poTCJ/ttAPpzDAnIhANru+llw56VKtUAdY=",
+  "Hash": "jP/5cV4w+ULDk3Ru2Zb2jYXeKTp/3Gd7pZT5aQxC2A4=",
   "Source": "unitforge",
   "BasePath": "_content/unitforge",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "unitforge\\wwwroot",
       "Source": "unitforge",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
       "BasePath": "_content/unitforge",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\bundle\\unitforge.styles.css",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\bundle\\unitforge.styles.css",
       "SourceId": "unitforge",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "unitforge.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\bundle\\unitforge.styles.css"
+      "OriginalItemSpec": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\bundle\\unitforge.styles.css"
     },
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\unitforge.bundle.scp.css",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\unitforge.bundle.scp.css",
       "SourceId": "unitforge",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "unitforge.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\unitforge.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\unitforge.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\app.css",
       "SourceId": "unitforge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\buttons.css",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\buttons.css",
       "SourceId": "unitforge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "buttons.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\buttons.css"
     },
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\favicon.ico",
       "SourceId": "unitforge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\forms.css",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\forms.css",
       "SourceId": "unitforge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "forms.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\forms.css"
     },
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\images\\unitforge-logo.png",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\images\\unitforge-logo.png",
       "SourceId": "unitforge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "images/unitforge-logo.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\unitforge-logo.png"
     },
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\table.css",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\table.css",
       "SourceId": "unitforge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "table.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\table.css"
     },
     {
-      "Identity": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\typography.css",
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\typography.css",
       "SourceId": "unitforge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lewis\\Documents\\Dark Mode Studios\\unitforge\\unitforge\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
       "BasePath": "_content/unitforge",
       "RelativePath": "typography.css",
       "AssetKind": "All",

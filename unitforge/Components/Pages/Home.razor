@@ -12,7 +12,7 @@
     <div class="row my-4">
         @foreach (var category in _unitCategories.Keys)
         {
-            <div class="col">
+            <div class="col my-3">
                 <button class="custom-button-outline w-100 @(category == _selectedCategory ? "isActive" : "")" @onclick="() => SelectCategory(category)">@category</button>
             </div>
         }
