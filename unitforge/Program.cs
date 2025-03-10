@@ -8,6 +8,7 @@ using unitforge.Services.Abstractions;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IAreaConversionService, AreaConversionService>();
+builder.Services.AddScoped<IEnergyConversionService, EnergyConversionService>();
 builder.Services.AddScoped<ILengthConversionService, LengthConversionService>();
 builder.Services.AddScoped<ITemperatureConversionService, TemperatureConversionService>();
 builder.Services.AddScoped<IAreaConversionService, AreaConversionService>();

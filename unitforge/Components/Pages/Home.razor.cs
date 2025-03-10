@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using unitforge.Models;
+using unitforge.Services;
 using unitforge.Services.Abstractions;
 
 namespace unitforge.Components.Pages;
@@ -10,6 +11,9 @@ public partial class Home : ComponentBase
 {
     [Inject]
     public IAreaConversionService? AreaConversionService { get; set; }
+    
+    [Inject]
+    public IEnergyConversionService? EnergyConversionService { get; set; }
     
     [Inject]
     public ILengthConversionService? LengthConversionService { get; set; }
@@ -26,8 +30,8 @@ public partial class Home : ComponentBase
     [Inject]
     public IWeightConversionService? WeightConversionService { get; set; }
     
-    [Inject]
-    IJSRuntime? JS { get; set; }
+    [Inject] 
+    private IJSRuntime? Js { get; set; }
 
     private string _selectedCategory =  "Length";
     
@@ -55,8 +59,8 @@ public partial class Home : ComponentBase
             _toUnits = new List<string>(units);
         }
 
-        JS.InvokeVoidAsync("clearInputFields");
-        
+        Js.InvokeVoidAsync("clearInputFields");
+
         StateHasChanged();
     }
 
@@ -82,12 +86,13 @@ public partial class Home : ComponentBase
         {
             _outputValue = _selectedCategory switch
             {
-                "Length" => LengthConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
-                "Weight" => WeightConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Area" => AreaConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
-                "Volume" => VolumeConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
-                "Time" => TimeConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
+                "Energy" => EnergyConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
+                "Length" => LengthConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Temperature" => TemperatureConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
+                "Time" => TimeConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
+                "Volume" => VolumeConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
+                "Weight" => WeightConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 _ => "Unsupported"
             };
         }

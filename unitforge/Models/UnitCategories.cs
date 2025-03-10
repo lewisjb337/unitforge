@@ -5,6 +5,29 @@ public abstract class UnitCategories
     public static Dictionary<string, List<string>> Categories => new()
     {
         {
+            "Area", 
+            [
+                "Square Meter", "Square Kilometer", "Square Centimeter", "Square Millimeter", "Square Inch", "Square Foot", "Square Yard", "Acre", 
+                "Hectare", "Square Mile", "Are", "Barn", "Square Foot (US Survey)", "Square Mile (US Survey)", "Square Rod", "Square Chain", 
+                "Circular Inch", "Section", "Rood", "Square Perch", "Square Pole", "Square Mil", "Square Dekameter", "Square Nanometer", 
+                "Square Decimeter", "Square Hectometer", "Township", "Homestead", "Cuerda", "Arpent", "Sabin", "Varas Castellanas Cuad", 
+                "Electron Cross Section"
+            ]
+        },
+        {
+            "Energy",
+            [
+                "Joule", "Kilojoule", "Kilowatt-hour", "Watt-hour", "Calorie (nutritional)", "Horsepower (metric) hour", "Btu (IT)", "Btu (th)", 
+                "Gigajoule", "Megajoule", "Millijoule", "Microjoule", "Nanojoule", "Attojoule", "Megaelectron-volt", "Kiloelectron-volt", 
+                "Electron-volt", "Erg", "Gigawatt-hour", "Megawatt-hour", "Kilowatt-second", "Watt-second", "Newton meter", "Horsepower hour", 
+                "Kilocalorie (IT)", "Kilocalorie (th)", "Calorie (IT)", "Calorie (th)", "Mega Btu (IT)", "Ton-hour (refrigeration)", "Fuel oil equivalent @kiloliter", 
+                "Fuel oil equivalent @barrel (US)", "Gigaton", "Megaton", "Kiloton", "Ton (explosives)", "Dyne centimeter", "Gram-force meter", 
+                "Gram-force centimeter", "Kilogram-force centimeter", "Kilogram-force meter", "Kilopond meter", "Pound-force foot", "Pound-force inch",
+                "Ounce-force inch", "Foot-pound", "Inch-pound", "Inch-ounce", "Poundal foot", "Therm", "Therm (EC)", "Therm (US)", "Hartree energy", 
+                "Rydberg constant"
+            ]
+        },
+        {
             "Length", [
                 "Meter", "Kilometer", "Centimeter", "Millimeter", "Mile", "Yard", "Foot", "Inch", "Micrometer", "Nanometer", "Furlong", "Chain",
                 "Nautical Mile (International)", "Nautical Mile (UK)", "Statute Mile", "Statute Yard", "Mile (US Survey)", "Kiloparsec", "Parsec",
@@ -14,13 +37,18 @@ public abstract class UnitCategories
             ]
         },
         {
-            "Area", 
+            "Temperature",
             [
-                "Square Meter", "Square Kilometer", "Square Centimeter", "Square Millimeter", "Square Inch", "Square Foot", "Square Yard", "Acre", 
-                "Hectare", "Square Mile", "Are", "Barn", "Square Foot (US Survey)", "Square Mile (US Survey)", "Square Rod", "Square Chain", 
-                "Circular Inch", "Section", "Rood", "Square Perch", "Square Pole", "Square Mil", "Square Dekameter", "Square Nanometer", 
-                "Square Decimeter", "Square Hectometer", "Township", "Homestead", "Cuerda", "Arpent", "Sabin", "Varas Castellanas Cuad", 
-                "Electron Cross Section"
+                "Celsius", "Fahrenheit", "Kelvin", "Rankine", "Reaumur", "Triple point of water"
+            ]
+        },
+        {
+            "Time", 
+            [
+                "Second", "Minute", "Hour", "Day", "Week", "Month", "Year", "Millisecond", "Microsecond", "Nanosecond", "Picosecond", "Decade", "Century", 
+                "Millennium", "Attosecond", "Shake", "Fortnight", "Month (Synodic)", "Year (Julian)", "Year (Leap)", "Year (Tropical)", "Year (Sidereal)", 
+                "Day (Sidereal)", "Hour (Sidereal)", "Minute (Sidereal)", "Second (Sidereal)", "Septennial", "Octennial", "Novennial", "Quindecennial", 
+                "Quinquennial", "Planck Time"
             ]
         },
         {
@@ -41,21 +69,6 @@ public abstract class UnitCategories
                 "Kilopound", "Slug", "Pennyweight", "Hundredweight (US)", "Hundredweight (UK)", "Mina (Biblical Hebrew)", "Quintal (Metric)", "Grain", 
                 "Decigram", "Centigram", "Microgram", "Nanogram", "Picogram", "Femtogram", "Attogram", "Dalton", "Electron Mass (Rest)", "Neutron Mass", 
                 "Muon Mass", "Proton Mass", "Planck Mass", "Earth's Mass", "Sun's Mass"
-            ]
-        },
-        {
-            "Time", 
-            [
-                "Second", "Minute", "Hour", "Day", "Week", "Month", "Year", "Millisecond", "Microsecond", "Nanosecond", "Picosecond", "Decade", "Century", 
-                "Millennium", "Attosecond", "Shake", "Fortnight", "Month (Synodic)", "Year (Julian)", "Year (Leap)", "Year (Tropical)", "Year (Sidereal)", 
-                "Day (Sidereal)", "Hour (Sidereal)", "Minute (Sidereal)", "Second (Sidereal)", "Septennial", "Octennial", "Novennial", "Quindecennial", 
-                "Quinquennial", "Planck Time"
-            ]
-        },
-        {
-            "Temperature",
-            [
-                "Celsius", "Fahrenheit", "Kelvin", "Rankine", "Reaumur", "Triple point of water"
             ]
         }
     };

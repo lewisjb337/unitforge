@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcmVhQ29udmVyc2lvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/EnergyConversion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbmVyZ3lDb252ZXJzaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
