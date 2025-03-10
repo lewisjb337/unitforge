@@ -1,3 +1,6 @@
+using Sidio.Sitemap.AspNetCore;
+using Sidio.Sitemap.Blazor;
+using Sidio.Sitemap.Core.Services;
 using unitforge.Components;
 using unitforge.Services;
 using unitforge.Services.Abstractions;
@@ -12,6 +15,10 @@ builder.Services.AddScoped<ITimeConversionService, TimeConversionService>();
 builder.Services.AddScoped<IVolumeConversionService, VolumeConversionService>();
 builder.Services.AddScoped<IWeightConversionService, WeightConversionService>();
 
+builder.Services
+    .AddHttpContextAccessor()
+    .AddDefaultSitemapServices<HttpContextBaseUrlProvider>();
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
@@ -21,6 +28,8 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseHsts();
 }
+
+app.UseSitemap();
 
 app.UseHttpsRedirection();
 

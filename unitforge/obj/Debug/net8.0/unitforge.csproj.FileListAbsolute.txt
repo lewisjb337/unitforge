@@ -59,3 +59,10 @@ C:\Users\lewis\Documents\GitHub\unitforge\unitforge\obj\Debug\net8.0\refint\unit
 C:\Users\lewis\Documents\GitHub\unitforge\unitforge\obj\Debug\net8.0\unitforge.pdb
 C:\Users\lewis\Documents\GitHub\unitforge\unitforge\obj\Debug\net8.0\unitforge.genruntimeconfig.cache
 C:\Users\lewis\Documents\GitHub\unitforge\unitforge\obj\Debug\net8.0\ref\unitforge.dll
+C:\Users\lewis\Documents\GitHub\unitforge\unitforge\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\lewis\Documents\GitHub\unitforge\unitforge\bin\Debug\net8.0\Sidio.Sitemap.AspNetCore.dll
+C:\Users\lewis\Documents\GitHub\unitforge\unitforge\bin\Debug\net8.0\Sidio.Sitemap.Blazor.dll
+C:\Users\lewis\Documents\GitHub\unitforge\unitforge\bin\Debug\net8.0\Sidio.Sitemap.Core.dll
+C:\Users\lewis\Documents\GitHub\unitforge\unitforge\obj\Debug\net8.0\unitforge.csproj.AssemblyReference.cache
+C:\Users\lewis\Documents\GitHub\unitforge\unitforge\obj\Debug\net8.0\unitforge.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lewis\Documents\GitHub\unitforge\unitforge\obj\Debug\net8.0\unitforge.csproj.Up2Date

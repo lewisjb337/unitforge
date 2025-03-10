@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vm7pZg2jPpM=",
+  "dgSpecHash": "eKxaHvHJlLE=",
   "success": true,
   "projectFilePath": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\unitforge.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lewis\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.1\\microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\lewis\\.nuget\\packages\\sidio.sitemap.aspnetcore\\2.7.2\\sidio.sitemap.aspnetcore.2.7.2.nupkg.sha512",
+    "C:\\Users\\lewis\\.nuget\\packages\\sidio.sitemap.blazor\\1.1.1\\sidio.sitemap.blazor.1.1.1.nupkg.sha512",
+    "C:\\Users\\lewis\\.nuget\\packages\\sidio.sitemap.core\\2.7.1\\sidio.sitemap.core.2.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

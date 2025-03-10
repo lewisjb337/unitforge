@@ -1,11 +1,171 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Sidio.Sitemap.AspNetCore/2.7.2": {
+        "type": "package",
+        "dependencies": {
+          "Sidio.Sitemap.Core": "2.7.1"
+        },
+        "compile": {
+          "lib/net8.0/Sidio.Sitemap.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Sidio.Sitemap.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Sidio.Sitemap.Blazor/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Sidio.Sitemap.AspNetCore": "2.7.2"
+        },
+        "compile": {
+          "lib/net8.0/Sidio.Sitemap.Blazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Sidio.Sitemap.Blazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Sidio.Sitemap.Core/2.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.1"
+        },
+        "compile": {
+          "lib/net8.0/Sidio.Sitemap.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Sidio.Sitemap.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.1": {
+      "sha512": "Tr74eP0oQ3AyC24ch17N8PuEkrPbD0JqIfENCYqmgKYNOmL8wQKzLJu3ObxTUDrjnn4rHoR1qKa37/eQyHmCDA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Sidio.Sitemap.AspNetCore/2.7.2": {
+      "sha512": "Kzhh/e9XpnE6pvfWOvPF0/+L0AhG2wqpBxG5o6/oQD/5w6GsY2SrVVE/B+KRoz1s+JaqA0ZfQ3fnCXmwFsRuZQ==",
+      "type": "package",
+      "path": "sidio.sitemap.aspnetcore/2.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Sidio.Sitemap.AspNetCore.dll",
+        "lib/net8.0/Sidio.Sitemap.AspNetCore.xml",
+        "lib/net9.0/Sidio.Sitemap.AspNetCore.dll",
+        "lib/net9.0/Sidio.Sitemap.AspNetCore.xml",
+        "sidio.sitemap.aspnetcore.2.7.2.nupkg.sha512",
+        "sidio.sitemap.aspnetcore.nuspec"
+      ]
+    },
+    "Sidio.Sitemap.Blazor/1.1.1": {
+      "sha512": "0razg34R2q7Wu15b+rv8roTxsj9PtJGrBKfvC0OvDAjS2pqeDtkfrMpQ8wH64+2ySeI1D0zYrUhVcZpmhn3/zg==",
+      "type": "package",
+      "path": "sidio.sitemap.blazor/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Sidio.Sitemap.Blazor.dll",
+        "lib/net8.0/Sidio.Sitemap.Blazor.xml",
+        "lib/net9.0/Sidio.Sitemap.Blazor.dll",
+        "lib/net9.0/Sidio.Sitemap.Blazor.xml",
+        "sidio.sitemap.blazor.1.1.1.nupkg.sha512",
+        "sidio.sitemap.blazor.nuspec"
+      ]
+    },
+    "Sidio.Sitemap.Core/2.7.1": {
+      "sha512": "IDcrBzw2LgHKHz7Lhz6bsnvqGh/yd3JU9DciZCIgw8/c74beGxvupEuUzopqkCzlBhnSC/kpB9qCAOpt4NyBpQ==",
+      "type": "package",
+      "path": "sidio.sitemap.core/2.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Sidio.Sitemap.Core.dll",
+        "lib/net8.0/Sidio.Sitemap.Core.xml",
+        "lib/net9.0/Sidio.Sitemap.Core.dll",
+        "lib/net9.0/Sidio.Sitemap.Core.xml",
+        "lib/netstandard2.0/Sidio.Sitemap.Core.dll",
+        "lib/netstandard2.0/Sidio.Sitemap.Core.xml",
+        "sidio.sitemap.core.2.7.1.nupkg.sha512",
+        "sidio.sitemap.core.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Sidio.Sitemap.Blazor >= 1.1.1"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\lewis\\.nuget\\packages\\": {},
@@ -58,6 +218,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Sidio.Sitemap.Blazor": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
