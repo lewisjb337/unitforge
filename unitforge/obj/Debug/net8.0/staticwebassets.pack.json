@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\images\\unitforge-logo.png"
     },
     {
+      "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
+    },
+    {
       "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\table.css",
       "PackagePath": "staticwebassets\\table.css"
     },

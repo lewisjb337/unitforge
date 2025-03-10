@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using unitforge.Models;
 using unitforge.Services.Abstractions;
 
 namespace unitforge.Components.Pages;
@@ -9,35 +10,15 @@ public partial class LengthConversion : ComponentBase
 {
     [Inject]
     public ILengthConversionService? LengthConversionService { get; set; }
-    
-    [Inject]
-    IJSRuntime? JS { get; set; }
-    
-    private readonly Dictionary<string, List<string>> _unitCategories = new()
-    {
-        { "Length",
-            [
-                "Meter", "Kilometer", "Centimeter", "Millimeter", "Micrometer", "Nanometer", "Mile", "Yard", "Foot",
-                "Inch",
-                "Light Year"
-            ]
-        }
-    };
 
-    private readonly List<string> _fromUnits;
-    private readonly List<string> _toUnits;
+    private readonly List<string> _fromUnits = [..UnitCategories.Categories["Length"]];
+    private readonly List<string> _toUnits = [..UnitCategories.Categories["Length"]];
     
     private string _fromUnit = string.Empty;
     private string _toUnit = string.Empty;
     private string _inputValue = string.Empty;
     
     private string? _outputValue;
-
-    public LengthConversion()
-    {
-        _fromUnits = new List<string>(_unitCategories["Length"]);
-        _toUnits = new List<string>(_unitCategories["Length"]);
-    }
 
     private void Recalculate()
     {

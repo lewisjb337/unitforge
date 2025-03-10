@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using Sidio.Sitemap.Blazor
 @using unitforge.Components.Layout
+@using unitforge.Models
 
 @rendermode InteractiveServer
 
@@ -13,7 +14,7 @@
     <p class="mb-5">Easily convert any unit from one type to another</p>
 
     <div class="row my-4">
-        @foreach (var category in _unitCategories.Keys)
+        @foreach (var category in UnitCategories.Categories.Keys)
         {
             <div class="col my-3">
                 <button class="custom-button-outline w-100 @(category == _selectedCategory ? "isActive" : "")" @onclick="() => SelectCategory(category)">@category</button>

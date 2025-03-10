@@ -6,11 +6,11 @@
 
 @attribute [Sitemap]
 
-<PageTitle>UnitForge - Weight Conversion</PageTitle>
+<PageTitle>UnitForge - Weight & Mass Conversion</PageTitle>
 
 <div class="container my-5 text-center text-white">
-    <h1>Weight Converter</h1>
-    <p class="mb-5">Convert from one weight type to another</p>
+    <h1>Weight & Mass Converter</h1>
+    <p class="mb-5">Convert from one weight/mass type to another</p>
 
     <div class="card rounded-5 mx-auto p-3">
         <h3 class="text-center">Weight</h3>
@@ -57,16 +57,3 @@
 </div>
 
 <Information></Information>
-
-<script>
-    function clearInputFields() {
-        document.getElementById('fromVal').value = '';
-        document.getElementById('toVal').value = '';
-
-        const fromSelect = document.getElementById('calFrom');
-        const toSelect = document.getElementById('calTo');
-
-        fromSelect.selectedIndex = -1;
-        toSelect.selectedIndex = -1;
-    }
-</script>

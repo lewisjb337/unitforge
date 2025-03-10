@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using unitforge.Models;
 using unitforge.Services.Abstractions;
 
 namespace unitforge.Components.Pages;
@@ -9,34 +10,15 @@ public partial class TimeConversion : ComponentBase
 {
     [Inject]
     public ITimeConversionService? TimeConversionService { get; set; }
-    
-    [Inject]
-    IJSRuntime? JS { get; set; }
-    
-    private readonly Dictionary<string, List<string>> _unitCategories = new()
-    {
-        { "Time",
-            [
-                "Second", "Millisecond", "Microsecond", "Nanosecond", "Picosecond", "Minute", "Hour", "Day", "Week",
-                "Month", "Year"
-            ]
-        }
-    };
 
-    private readonly List<string> _fromUnits;
-    private readonly List<string> _toUnits;
+    private readonly List<string> _fromUnits = [..UnitCategories.Categories["Time"]];
+    private readonly List<string> _toUnits = [..UnitCategories.Categories["Time"]];
     
     private string _fromUnit = string.Empty;
     private string _toUnit = string.Empty;
     private string _inputValue = string.Empty;
     
     private string? _outputValue;
-
-    public TimeConversion()
-    {
-        _fromUnits = new List<string>(_unitCategories["Time"]);
-        _toUnits = new List<string>(_unitCategories["Time"]);
-    }
 
     private void Recalculate()
     {

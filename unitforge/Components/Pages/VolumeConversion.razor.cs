@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using unitforge.Models;
 using unitforge.Services.Abstractions;
 
 namespace unitforge.Components.Pages;
@@ -9,36 +10,15 @@ public partial class VolumeConversion : ComponentBase
 {
     [Inject]
     public IVolumeConversionService? VolumeConversionService { get; set; }
-    
-    [Inject]
-    IJSRuntime? JS { get; set; }
-    
-    private readonly Dictionary<string, List<string>> _unitCategories = new()
-    {
-        { "Volume",
-            [
-                "Cubic Meter", "Cubic Kilometer", "Cubic Centimeter", "Cubic Millimeter", "Liter", "Milliliter",
-                "US Gallon", "US Quart", "US Pint", "US Cup", "US Fluid Ounce", "US Table Spoon", "US Tea Spoon",
-                "Imperial Gallon", "Imperial Quart", "Imperial Pint", "Imperial Fluid Ounce", "Imperial Table Spoon",
-                "Imperial Tea Spoon", "Cubic Mile", "Cubic Yard", "Cubic Foot", "Cubic Inch"
-            ]
-        }
-    };
 
-    private readonly List<string> _fromUnits;
-    private readonly List<string> _toUnits;
+    private readonly List<string> _fromUnits = [..UnitCategories.Categories["Volume"]];
+    private readonly List<string> _toUnits = [..UnitCategories.Categories["Volume"]];
     
     private string _fromUnit = string.Empty;
     private string _toUnit = string.Empty;
     private string _inputValue = string.Empty;
     
     private string? _outputValue;
-
-    public VolumeConversion()
-    {
-        _fromUnits = new List<string>(_unitCategories["Volume"]);
-        _toUnits = new List<string>(_unitCategories["Volume"]);
-    }
 
     private void Recalculate()
     {

@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using unitforge.Models;
 using unitforge.Services.Abstractions;
 
 namespace unitforge.Components.Pages;
@@ -9,34 +10,15 @@ public partial class WeightConversion : ComponentBase
 {
     [Inject]
     public IWeightConversionService? WeightConversionService { get; set; }
-    
-    [Inject]
-    IJSRuntime? JS { get; set; }
-    
-    private readonly Dictionary<string, List<string>> _unitCategories = new()
-    {
-        { "Weight",
-            [
-                "Kilogram", "Gram", "Milligram", "Metric Ton", "Long Ton", "Short Ton", "Pound", "Ounce", "Carrat",
-                "Atomic Mass Unit"
-            ]
-        }
-    };
 
-    private readonly List<string> _fromUnits;
-    private readonly List<string> _toUnits;
+    private readonly List<string> _fromUnits = [..UnitCategories.Categories["Weight"]];
+    private readonly List<string> _toUnits = [..UnitCategories.Categories["Weight"]];
     
     private string _fromUnit = string.Empty;
     private string _toUnit = string.Empty;
     private string _inputValue = string.Empty;
     
     private string? _outputValue;
-
-    public WeightConversion()
-    {
-        _fromUnits = new List<string>(_unitCategories["Weight"]);
-        _toUnits = new List<string>(_unitCategories["Weight"]);
-    }
 
     private void Recalculate()
     {

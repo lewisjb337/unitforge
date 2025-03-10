@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jP/5cV4w+ULDk3Ru2Zb2jYXeKTp/3Gd7pZT5aQxC2A4=",
+  "Hash": "pUbdyX+5XKhpHvFtt+LudpAlGNNQ4AgL+12fEUG3aos=",
   "Source": "unitforge",
   "BasePath": "_content/unitforge",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\unitforge-logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\robots.txt",
+      "SourceId": "unitforge",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\",
+      "BasePath": "_content/unitforge",
+      "RelativePath": "robots.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\robots.txt"
     },
     {
       "Identity": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\table.css",

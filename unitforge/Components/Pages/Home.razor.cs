@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using unitforge.Models;
 using unitforge.Services.Abstractions;
 
 namespace unitforge.Components.Pages;
@@ -27,61 +28,17 @@ public partial class Home : ComponentBase
     
     [Inject]
     IJSRuntime? JS { get; set; }
-    
-    private readonly Dictionary<string, List<string>> _unitCategories = new()
-    {
-        { "Length",
-            [
-                "Meter", "Kilometer", "Centimeter", "Millimeter", "Micrometer", "Nanometer", "Mile", "Yard", "Foot",
-                "Inch",
-                "Light Year"
-            ]
-        },
-        { "Area",
-            [
-                "Square Meter", "Square Kilometer", "Square Centimeter", "Square Millimeter", "Square Micrometer",
-                "Hectare", "Square Mile", "Square Yard", "Square Foot", "Square Inch", "Acre"
-            ]
-        },
-        { "Volume",
-            [
-                "Cubic Meter", "Cubic Kilometer", "Cubic Centimeter", "Cubic Millimeter", "Liter", "Milliliter",
-                "US Gallon", "US Quart", "US Pint", "US Cup", "US Fluid Ounce", "US Table Spoon", "US Tea Spoon",
-                "Imperial Gallon", "Imperial Quart", "Imperial Pint", "Imperial Fluid Ounce", "Imperial Table Spoon",
-                "Imperial Tea Spoon", "Cubic Mile", "Cubic Yard", "Cubic Foot", "Cubic Inch"
-            ]
-        },
-        { "Weight",
-            [
-                "Kilogram", "Gram", "Milligram", "Metric Ton", "Long Ton", "Short Ton", "Pound", "Ounce", "Carrat",
-                "Atomic Mass Unit"
-            ]
-        },
-        { "Time",
-            [
-                "Second", "Millisecond", "Microsecond", "Nanosecond", "Picosecond", "Minute", "Hour", "Day", "Week",
-                "Month", "Year"
-            ]
-        },
-        { "Temperature", ["Celsius", "Fahrenheit", "Kelvin"] }
-    };
 
     private string _selectedCategory =  "Length";
     
-    private List<string> _fromUnits;
-    private List<string> _toUnits;
+    private List<string> _fromUnits = [..UnitCategories.Categories["Length"]];
+    private List<string> _toUnits = [..UnitCategories.Categories["Length"]];
     
     private string _fromUnit = string.Empty;
     private string _toUnit = string.Empty;
     private string _inputValue = string.Empty;
     
     private string? _outputValue;
-
-    public Home()
-    {
-        _fromUnits = new List<string>(_unitCategories["Length"]);
-        _toUnits = new List<string>(_unitCategories["Length"]);
-    }
 
     private void SelectCategory(string category)
     {
@@ -91,7 +48,7 @@ public partial class Home : ComponentBase
         {
             _selectedCategory = string.Empty; 
         }
-        else if (_unitCategories.TryGetValue(category, out var units))
+        else if (UnitCategories.Categories.TryGetValue(category, out var units))
         {
             _selectedCategory = category; 
             _fromUnits = new List<string>(units);

@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using unitforge.Models;
 using unitforge.Services.Abstractions;
 
 namespace unitforge.Components.Pages;
@@ -9,29 +10,15 @@ public partial class TemperatureConversion : ComponentBase
 {
     [Inject]
     public ITemperatureConversionService? TemperatureConversionService { get; set; }
-    
-    [Inject]
-    IJSRuntime? JS { get; set; }
-    
-    private readonly Dictionary<string, List<string>> _unitCategories = new()
-    {
-        { "Temperature", ["Celsius", "Fahrenheit", "Kelvin"] }
-    };
 
-    private readonly List<string> _fromUnits;
-    private readonly List<string> _toUnits;
+    private readonly List<string> _fromUnits = [..UnitCategories.Categories["Temperature"]];
+    private readonly List<string> _toUnits = [..UnitCategories.Categories["Temperature"]];
     
     private string _fromUnit = string.Empty;
     private string _toUnit = string.Empty;
     private string _inputValue = string.Empty;
     
     private string? _outputValue;
-
-    public TemperatureConversion()
-    {
-        _fromUnits = new List<string>(_unitCategories["Temperature"]);
-        _toUnits = new List<string>(_unitCategories["Temperature"]);
-    }
 
     private void Recalculate()
     {
