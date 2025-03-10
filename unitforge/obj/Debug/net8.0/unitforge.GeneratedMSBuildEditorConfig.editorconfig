@@ -42,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZW5ndGhDb252ZXJzaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/PressureConversion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcmVzc3VyZUNvbnZlcnNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/TemperatureConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUZW1wZXJhdHVyZUNvbnZlcnNpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

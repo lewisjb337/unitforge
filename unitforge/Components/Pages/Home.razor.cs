@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using unitforge.Models;
-using unitforge.Services;
 using unitforge.Services.Abstractions;
 
 namespace unitforge.Components.Pages;
@@ -17,6 +16,9 @@ public partial class Home : ComponentBase
     
     [Inject]
     public ILengthConversionService? LengthConversionService { get; set; }
+    
+    [Inject]
+    public IPressureConversionService? PressureConversionService { get; set; }
     
     [Inject]
     public ITemperatureConversionService? TemperatureConversionService { get; set; }
@@ -59,7 +61,9 @@ public partial class Home : ComponentBase
             _toUnits = new List<string>(units);
         }
 
-        Js.InvokeVoidAsync("clearInputFields");
+        #pragma warning disable CA2012
+        Js!.InvokeVoidAsync("clearInputFields");
+        #pragma warning restore CA2012
 
         StateHasChanged();
     }
@@ -89,6 +93,7 @@ public partial class Home : ComponentBase
                 "Area" => AreaConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Energy" => EnergyConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Length" => LengthConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
+                "Pressure" => PressureConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Temperature" => TemperatureConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Time" => TimeConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Volume" => VolumeConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),

@@ -37,6 +37,19 @@ public abstract class UnitCategories
             ]
         },
         {
+            "Pressure",
+            [
+                "Pascal (Pa)", "Kilopascal (kPa)", "Bar", "Pounds per square inch (psi)", "Standard atmosphere (atm)", "Megapascal (MPa)", "Torr", 
+                "Inch of mercury (inHg)", "Millimeter of mercury (mmHg)", "Hectopascal (hPa)", "Newton per square meter (N/m²)", "Newton per square millimeter (N/mm²)",
+                "Dyne per square centimeter", "Kilonewton per square meter (kN/m²)", "Millibar (mbar)", "Gram-force per square centimeter", 
+                "Kilogram-force per square meter", "Kilogram-force per square centimeter", "Pound-force per square foot", "Pound-force per square inch", 
+                "Ton-force (short) per square foot", "Ton-force (short) per square inch", "Ton-force (long) per square foot", "Ton-force (long) per square inch",
+                "Technical atmosphere (at)", "Inch of water (inAq)", "Foot of water (ftAq)", "Millimeter of water", "Centimeter of water", "Exapascal (EPa)",
+                "Petapascal (PPa)", "Terapascal (TPa)", "Gigapascal (GPa)", "Decipascal (dPa)", "Centipascal (cPa)", "Millipascal (mPa)", "Micropascal (µPa)", 
+                "Nanopascal (nPa)", "Picopascal (pPa)", "Femtopascal (fPa)", "Attopascal (aPa)"
+            ]
+        },
+        {
             "Temperature",
             [
                 "Celsius", "Fahrenheit", "Kelvin", "Rankine", "Reaumur", "Triple point of water"
