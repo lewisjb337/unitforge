@@ -9,16 +9,8 @@
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\buttons.css",
-      "PackagePath": "staticwebassets\\buttons.css"
-    },
-    {
       "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
-      "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\forms.css",
-      "PackagePath": "staticwebassets\\forms.css"
     },
     {
       "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\images\\unitforge-logo.png",
@@ -27,14 +19,6 @@
     {
       "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\robots.txt",
       "PackagePath": "staticwebassets\\robots.txt"
-    },
-    {
-      "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\table.css",
-      "PackagePath": "staticwebassets\\table.css"
-    },
-    {
-      "Id": "C:\\Users\\lewis\\Documents\\GitHub\\unitforge\\unitforge\\wwwroot\\typography.css",
-      "PackagePath": "staticwebassets\\typography.css"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.unitforge.props",
