@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "typography.css";
 @import "forms.css";
-@import "buttons.css";
 @import "table.css";
 
 body {
@@ -40,4 +39,221 @@ body {
     background: #121519 !important;
     padding: 20px;
     color: #FFFFFF;
+}
+
+
+
+/*Buttons*/
+.custom-button, .custom-button-outline, .custom-button-success, .custom-button-info, .custom-button-danger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 47px;
+    padding: 13px 28px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: auto;
+    min-width: 110px;
+}
+
+.custom-button, .isActive{
+    background-color: rgb(68, 140, 116) !important;
+    color: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(68, 140, 116) !important;
+}
+
+.custom-button-success{
+    background-color: rgb(63, 202, 144);
+    border: 1px solid rgb(63, 202, 144);
+}
+
+.custom-button-info{
+    background-color: rgb(63, 127, 202);
+    border: 1px solid rgb(63, 127, 202);
+}
+
+.custom-button-danger{
+    background-color: rgb(237, 80, 80);
+    border: 1px solid rgb(237, 80, 80);
+}
+
+.custom-button-outline{
+    background-color: transparent;
+    color: rgb(68, 140, 116);
+    border: 1px solid rgb(68, 140, 116);
+}
+
+.custom-button:hover, .custom-button-success:hover, .custom-button-info:hover, .custom-button-danger:hover {
+    opacity: 75% !important;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.custom-button-outline:hover{
+    background-color: rgb(68, 140, 116);
+    border: 1px solid rgb(68, 140, 116);
+    color: rgb(255, 255, 255) !important;
+}
+
+
+
+
+/*Forms*/
+.form-select, .dropdown{
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.25) !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px !important;
+    border-left-color: rgba(255, 255, 255, 0.25) !important;
+    border-left-style: solid !important;
+    border-left-width: 1px !important;
+    border-right-color: rgba(255, 255, 255, 0.25) !important;
+    border-right-style: solid !important;
+    border-right-width: 1px !important;
+    border-top-color: rgba(255, 255, 255, 0.25) !important;
+    border-radius: 18px !important;
+    border-top-style: solid !important;
+    border-top-width: 1px !important;
+    box-sizing: border-box !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    cursor: default !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+    color-scheme: dark !important;
+}
+
+.form-select {
+    padding: 14px 48px 14px 18px !important;
+}
+
+.dropdown{
+    padding: 2px;
+}
+
+[data-bs-theme=dark] .form-select:not([data-bs-theme=light]) option {
+    background-color: #121519 !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 13.2px 16px !important;
+    font-size: calc(1rem* 0.875);
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.7) !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-clip: padding-box;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 16px !important;
+    transition: border-color .15s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: transparent;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 5pt 0.5pt rgb(68, 140, 116) !important;
+    border: 1px solid rgb(68, 140, 116) !important;
+}
+
+.form-control:disabled{
+    background-color: #191C20 !important;
+}
+
+.form-select option:checked {
+    background-color: rgb(68, 140, 116) !important;
+    color: white !important;
+}
+
+
+
+
+/*Table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
+/*Typography*/
+h1, h2, h3, h4, h5, h6 {
+    box-sizing: border-box !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 600 !important;
+    margin-block-end: 16px !important;
+    margin-block-start: 0 !important;
+    margin-bottom: 16px !important;
+    margin-inline-end: 0 !important;
+    margin-inline-start: 0 !important;
+    margin-top: 0 !important;
+    overflow-wrap: break-word !important;
+    text-size-adjust: 100% !important;
+}
+
+h1 {
+    font-size: 40px !important;
+    line-height: 52px !important;
+}
+
+h2 {
+    font-size: 32px !important;
+    line-height: 41.6px !important;
+}
+
+h3 {
+    font-size: 28px !important;
+    line-height: 36.4px !important;
+}
+
+h4 {
+    font-size: 24px !important;
+    line-height: 33.6px !important;
+}
+
+h5 {
+    font-size: 20px !important;
+    line-height: 28px !important;
+}
+
+h6 {
+    font-size: 16px !important;
+    line-height: 22.4px !important;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
 }
