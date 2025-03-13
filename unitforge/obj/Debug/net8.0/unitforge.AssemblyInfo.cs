@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("unitforge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79e576624f25bf0961cfc992ce9b1e8525b4ca56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+246a4f517c9c7acaf4c17609cb2ea0799bf3a1e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("unitforge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("unitforge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

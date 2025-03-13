@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/AngleConversion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbmdsZUNvbnZlcnNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/AreaConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcmVhQ29udmVyc2lvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/EnergyConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbmVyZ3lDb252ZXJzaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/ForceConversion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGb3JjZUNvbnZlcnNpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/FuelConsumptionConversion.razor]
@@ -50,8 +58,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZW5ndGhDb252ZXJzaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/PowerConversion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQb3dlckNvbnZlcnNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/PressureConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcmVzc3VyZUNvbnZlcnNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/SpeedConverter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTcGVlZENvbnZlcnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/TemperatureConversion.razor]

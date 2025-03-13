@@ -1,0 +1,65 @@
+﻿@page "/force-converter"
+@using Sidio.Sitemap.Blazor
+@using unitforge.Components.Layout
+
+@rendermode InteractiveServer
+
+@attribute [Sitemap]
+
+<PageTitle>UnitForge - Free Online Force Conversion</PageTitle>
+
+<HeadContent>
+    <meta name="description" content="Convert area units instantly with UnitForge – a fast, minimal, and intuitive unit conversion web app. Easily switch between newtons [N], kilonewtons [kN], joule/meters [J/m], and more.">
+</HeadContent>
+
+<div class="container my-5 text-center text-white">
+    <h1>Free Online Force Conversion Tool</h1>
+    <p class="mb-5">Convert from one force type to another</p>
+
+    <div class="card rounded-5 mx-auto p-3">
+        <h3 class="text-center">Force</h3>
+        <table class="w-100">
+            <tr>
+                <td><label for="fromVal"><h4>From</h4></label></td>
+                <td></td>
+                <td><label for="toVal"><h4>To</h4></label></td>
+            </tr>
+            <tr>
+                <td><input class="form-control" type="text" id="fromVal" placeholder="Enter a unit of force" @oninput="OnInputChange" /></td>
+                <td></td>
+                <td><input class="form-control" type="text" id="toVal" value="@_outputValue" disabled /></td>
+            </tr>
+            <tr>
+                <td style="padding-top:8px;">
+                    <select class="form-select ucselect" id="calFrom" size="11" @onchange="OnUnitChangeFrom">
+                        <option value="" selected>Select a unit</option>
+                        @foreach (var unit in _fromUnits)
+                        {
+                            <option value="@unit">@unit</option>
+                        }
+                    </select>
+                </td>
+                <td></td>
+                <td style="padding-top:8px;">
+                    <select class="form-select ucselect" id="calTo" size="11" @onchange="OnUnitChangeTo">
+                        <option value="" selected>Select a unit</option>
+                        @foreach (var unit in _toUnits)
+                        {
+                            <option value="@unit">@unit</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        @if (!string.IsNullOrEmpty(_inputValue) && !string.IsNullOrEmpty(_outputValue))
+        {
+            <hr />
+            <h2 class="mt-3">
+                @(_inputValue) @(_fromUnit) = @(_outputValue) @(_toUnit)
+            </h2>
+        }
+    </div>
+</div>
+
+<Information></Information>

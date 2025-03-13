@@ -5,6 +5,14 @@ public abstract class UnitCategories
     public static Dictionary<string, List<string>> Categories => new()
     {
         {
+          "Angle",
+          [
+              "degree [°]", "radian [rad]", "grad [^g]", "minute [']", "second [\" ]",
+              "gon", "sign", "mil", "revolution [r]", "circle", "turn", "quadrant",
+              "right angle", "sextant"
+          ]
+        },
+        {
             "Area", 
             [
                 "Square Meter", "Square Kilometer", "Square Centimeter", "Square Millimeter", "Square Inch", "Square Foot", "Square Yard", "Acre", 
@@ -37,6 +45,20 @@ public abstract class UnitCategories
             ]
         },
         {
+            "Force",
+            [
+                "newton [N]", "kilonewton [kN]", "gram-force [gf]", "kilogram-force [kgf]",
+                "ton-force (metric) [tf]", "exanewton [EN]", "petanewton [PT]", "teranewton [TN]",
+                "giganewton [GN]", "meganewton [MN]", "hectonewton [hN]", "dekanewton [daN]",
+                "decinewton [dN]", "centinewton [cN]", "millinewton [mN]", "micronewton [µN]",
+                "nanonewton [nN]", "piconewton [pN]", "femtonewton [fN]", "attonewton [aN]",
+                "dyne [dyn]", "joule/meter [J/m]", "joule/centimeter [J/cm]", "ton-force (short)",
+                "ton-force (long) [tonf (UK)]", "kip-force [kipf]", "kilopound-force [kipf]",
+                "pound-force [lbf]", "ounce-force [ozf]", "poundal [pdl]", "pound foot/square second",
+                "pond [p]", "kilopond [kp]"
+            ]
+        },
+        {
             "Fuel",
               [
                 "meter/liter [m/L]", "exameter/liter [Em/L]", "petameter/liter [Pm/L]", "terameter/liter [Tm/L]",
@@ -59,6 +81,13 @@ public abstract class UnitCategories
                 "Earth's Equatorial Radius", "Earth's Polar Radius", "Sun's Radius"
             ]
         },
+        { 
+            "Power", [
+                "watt", "exawatt", "petawatt", "terawatt", "gigawatt", "megawatt", "kilowatt", "hectowatt", "dekawatt", "deciwatt", "centiwatt", 
+                "milliwatt", "microwatt", "nanowatt", "picowatt", "femtowatt", "attowatt", "horsepower", "horsepower_metric", "BTU_hour", 
+                "kilocalorie_hour", "foot_pound_force_hour", "volt_ampere", "joule_second"
+            ]
+        },
         {
             "Pressure",
             [
@@ -70,6 +99,19 @@ public abstract class UnitCategories
                 "Technical atmosphere (at)", "Inch of water (inAq)", "Foot of water (ftAq)", "Millimeter of water", "Centimeter of water", "Exapascal (EPa)",
                 "Petapascal (PPa)", "Terapascal (TPa)", "Gigapascal (GPa)", "Decipascal (dPa)", "Centipascal (cPa)", "Millipascal (mPa)", "Micropascal (µPa)", 
                 "Nanopascal (nPa)", "Picopascal (pPa)", "Femtopascal (fPa)", "Attopascal (aPa)"
+            ]
+        },
+        {
+            "Speed",
+            [
+                "meter/second [m/s]", "kilometer/hour [km/h]", "mile/hour [mi/h]", "meter/hour [m/h]",
+                "meter/minute [m/min]", "kilometer/minute [km/min]", "kilometer/second [km/s]", "centimeter/hour [cm/h]",
+                "centimeter/minute [cm/min]", "centimeter/second [cm/s]", "millimeter/hour [mm/h]", "millimeter/minute [mm/min]",
+                "millimeter/second [mm/s]", "foot/hour [ft/h]", "foot/minute [ft/min]", "foot/second [ft/s]", "yard/hour [yd/h]",
+                "yard/minute [yd/min]", "yard/second [yd/s]", "mile/minute [mi/min]", "mile/second [mi/s]", "knot [kt, kn]",
+                "knot (UK) [kt (UK)]", "Velocity of light in vacuum", "Cosmic velocity - first", "Cosmic velocity - second",
+                "Cosmic velocity - third", "Earth's velocity", "Velocity of sound in pure water", "Velocity of sound in sea water (20°C, 10 meter deep)",
+                "Mach (20°C, 1 atm)", "Mach (SI standard)"
             ]
         },
         {

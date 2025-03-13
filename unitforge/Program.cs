@@ -7,12 +7,16 @@ using unitforge.Services.Abstractions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped<IAngleConversionService, AngleConversionService>();
 builder.Services.AddScoped<IAreaConversionService, AreaConversionService>();
 builder.Services.AddScoped<IDataStorageConversionService, DataStorageConversionService>();
 builder.Services.AddScoped<IEnergyConversionService, EnergyConversionService>();
+builder.Services.AddScoped<IForceConversionService, ForceConversionService>();
 builder.Services.AddScoped<IFuelConsumptionConversionService, FuelConsumptionConversionService>();
 builder.Services.AddScoped<ILengthConversionService, LengthConversionService>();
+builder.Services.AddScoped<IPowerConversionService, PowerConversionService>();
 builder.Services.AddScoped<IPressureConversionService, PressureConversionService>();
+builder.Services.AddScoped<ISpeedConversionService, SpeedConversionService>();
 builder.Services.AddScoped<ITemperatureConversionService, TemperatureConversionService>();
 builder.Services.AddScoped<IAreaConversionService, AreaConversionService>();
 builder.Services.AddScoped<ITimeConversionService, TimeConversionService>();
