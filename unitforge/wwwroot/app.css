@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import "typography.css";
-@import "forms.css";
-@import "table.css";
 
 body {
     font-family: "Inter", sans-serif !important;
@@ -113,7 +110,7 @@ body {
 /*Forms*/
 .form-select, .dropdown{
     appearance: none;
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: #191C20 !important;
     border-bottom-color: rgba(255, 255, 255, 0.25) !important;
     border-bottom-style: solid !important;
     border-bottom-width: 1px !important;
@@ -143,7 +140,12 @@ body {
 }
 
 .dropdown{
-    padding: 2px;
+    padding: 13.2px 16px;
+    border: transparent !important;
+}
+
+.dropdown-item:hover{
+    background-color: #191C20 !important;
 }
 
 [data-bs-theme=dark] .form-select:not([data-bs-theme=light]) option {
@@ -161,7 +163,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: #191C20 !important;
     background-clip: padding-box;
     border: 1px solid rgba(255, 255, 255, 0.25) !important;
     border-radius: 16px !important;
@@ -256,4 +258,14 @@ p {
     font-size: 16px !important;
     font-weight: 400 !important;
     line-height: 24px !important;
+}
+
+
+
+
+/*Badge*/
+.api-badge{
+    color: rgba(63, 202, 144, 1) !important;
+    background-color: #192725 !important;
+    padding: 13.2px 16px !important;
 }

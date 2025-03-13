@@ -7,7 +7,7 @@
         transition: color 0.2s;
     }
 
-    .nav-link:hover {
+    .nav-link:hover, .dropdown-item:hover {
         color: rgb(68, 140, 116);
     }
 
@@ -15,8 +15,13 @@
         color: rgb(68, 140, 116) !important;
     }
 
-    .nav-link.active .nav-link-text {
-        color: rgb(68, 140, 116) !important;
+    .dropdown-menu {
+        background-color: #222;
+        border: none;
+    }
+
+    .dropdown-item {
+        color: #E8E8E8;
     }
 </style>
 
@@ -24,41 +29,35 @@
     <a href="/" class="brand mx-5">
         <img src="images/unitforge-logo.png" alt="UnitForge Logo" title="UnitForge Logo" height="60">
     </a>
-    
+
     <!-- Desktop Navigation -->
     <ul class="links me-auto mb-2 mb-lg-0">
-        <li>
-            <NavLink class="nav-link" href="/length-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Length</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/area-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Area</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/volume-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Volume</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/weight-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Weight</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/temperature-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Temperature</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/time-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Time</span>
-            </NavLink>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Conversion Tools
+            </a>
+            <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">General</h6></li>
+                <li><a class="dropdown-item" href="/area-converter">Area</a></li>
+                <li><a class="dropdown-item" href="/length-converter">Length</a></li>
+                <li><a class="dropdown-item" href="/volume-converter">Volume</a></li>
+                <li><a class="dropdown-item" href="/weight-converter">Weight</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><h6 class="dropdown-header">Scientific</h6></li>
+                <li><a class="dropdown-item" href="/energy-converter">Energy</a></li>
+                <li><a class="dropdown-item" href="/fuel-consumption-converter">Fuel Consumption</a></li>
+                <li><a class="dropdown-item" href="/pressure-converter">Pressure</a></li>
+                <li><a class="dropdown-item" href="/temperature-converter">Temperature</a></li>
+                <li><a class="dropdown-item" href="/time-converter">Time</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><h6 class="dropdown-header">Computing</h6></li>
+                <li><a class="dropdown-item" href="/data-storage-converter">Data Storage</a></li>
+            </ul>
         </li>
     </ul>
-    
+
+    <span class="badge rounded-pill ms-auto api-badge">API - Coming Soon</span>
+
     <!-- Burger Menu Button -->
     <div class="burger-menu">
         <div class="burger-bar"></div>
@@ -70,46 +69,21 @@
 <!-- Mobile Navigation -->
 <div class="mobile-nav">
     <ul class="mobile-links">
-        <li>
-            <NavLink class="nav-link" href="/area-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Area</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/energy-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Energy</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/length-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Length</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/pressure-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Pressure</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/temperature-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Temperature</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/time-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Time</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/volume-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Volume</span>
-            </NavLink>
-        </li>
-        <li>
-            <NavLink class="nav-link" href="/weight-converter" Match="NavLinkMatch.All">
-                <span class="nav-link-text">Weight</span>
-            </NavLink>
-        </li>
+        <li><h6 class="dropdown-header">General</h6></li>
+        <li><a class="nav-link" href="/area-converter">Area</a></li>
+        <li><a class="nav-link" href="/length-converter">Length</a></li>
+        <li><a class="nav-link" href="/volume-converter">Volume</a></li>
+        <li><a class="nav-link" href="/weight-converter">Weight</a></li>
+        <li><hr></li>
+        <li><h6 class="dropdown-header">Scientific</h6></li>
+        <li><a class="nav-link" href="/energy-converter">Energy</a></li>
+        <li><a class="nav-link" href="/fuel-consumption-converter">Fuel Consumption</a></li>
+        <li><a class="nav-link" href="/pressure-converter">Pressure</a></li>
+        <li><a class="nav-link" href="/temperature-converter">Temperature</a></li>
+        <li><a class="nav-link" href="/time-converter">Time</a></li>
+        <li><hr></li>
+        <li><h6 class="dropdown-header">Computing</h6></li>
+        <li><a class="nav-link" href="/data-storage-converter">Data Storage</a></li>
     </ul>
 </div>
 
@@ -120,26 +94,26 @@
         const burgerMenu = document.querySelector('.burger-menu');
         const mobileNav = document.querySelector('.mobile-nav');
         const overlay = document.querySelector('.overlay');
-        
+
         burgerMenu.addEventListener('click', function() {
             burgerMenu.classList.toggle('active');
             mobileNav.classList.toggle('active');
             overlay.classList.toggle('active');
-            
+
             if (mobileNav.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
             } else {
                 document.body.style.overflow = 'auto';
             }
         });
-        
+
         overlay.addEventListener('click', function() {
             burgerMenu.classList.remove('active');
             mobileNav.classList.remove('active');
             overlay.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
-        
+
         const mobileLinks = document.querySelectorAll('.mobile-links .nav-link');
         mobileLinks.forEach(link => {
             link.addEventListener('click', function() {

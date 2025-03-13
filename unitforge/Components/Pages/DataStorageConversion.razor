@@ -1,4 +1,4 @@
-﻿@page "/area-converter"
+﻿@page "/data-storage-converter"
 @using Sidio.Sitemap.Blazor
 @using unitforge.Components.Layout
 
@@ -6,18 +6,18 @@
 
 @attribute [Sitemap]
 
-<PageTitle>UnitForge - Free Online Area Conversion</PageTitle>
+<PageTitle>UnitForge - Free Online Data Storage Conversion</PageTitle>
 
 <HeadContent>
-    <meta name="description" content="Convert area units instantly with UnitForge – a fast, minimal, and intuitive unit conversion web app. Easily switch between square meters, acres, hectares, and more.">
+    <meta name="description" content="Convert area units instantly with UnitForge – a fast, minimal, and intuitive unit conversion web app. Easily switch between bits, bytes, kilobytes, and more.">
 </HeadContent>
 
 <div class="container my-5 text-center text-white">
-    <h1>Free Online Area Conversion Tool</h1>
-    <p class="mb-5">Convert from one area type to another</p>
+    <h1>Free Online Data Storage Conversion Tool</h1>
+    <p class="mb-5">Convert from one data storage type to another</p>
 
     <div class="card rounded-5 mx-auto p-3">
-        <h3 class="text-center">Area</h3>
+        <h3 class="text-center">Data Storage</h3>
         <table class="w-100">
             <tr>
                 <td><label for="fromVal"><h4>From</h4></label></td>
@@ -25,7 +25,7 @@
                 <td><label for="toVal"><h4>To</h4></label></td>
             </tr>
             <tr>
-                <td><input class="form-control" type="text" id="fromVal" placeholder="Enter a unit of area" @oninput="OnInputChange" /></td>
+                <td><input class="form-control" type="text" id="fromVal" placeholder="Enter a unit of data" @oninput="OnInputChange" /></td>
                 <td></td>
                 <td><input class="form-control" type="text" id="toVal" value="@_outputValue" disabled /></td>
             </tr>

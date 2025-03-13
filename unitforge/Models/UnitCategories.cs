@@ -15,6 +15,15 @@ public abstract class UnitCategories
             ]
         },
         {
+            "Data",
+            [
+                "bit", "nibble", "byte", "kilobit", "kilobyte", "megabit", "megabyte", "gigabit", "gigabyte", "terabit", "terabyte", "petabit", "petabyte",
+                "exabit", "exabyte", "floppy disk (3.5 DD)", "floppy disk (3.5 HD)", "floppy disk (3.5 ED)", "floppy disk (5.25 DD)", "floppy disk (5.25 HD)",
+                "Zip 100", "Zip 250", "Jaz 1GB", "Jaz 2GB", "CD (74 minute)", "CD (80 minute)", "DVD (1 layer, 1 side)", "DVD (2 layer, 1 side)", 
+                "DVD (1 layer, 2 side)", "DVD (2 layer, 2 side)"
+            ]
+        },
+        {
             "Energy",
             [
                 "Joule", "Kilojoule", "Kilowatt-hour", "Watt-hour", "Calorie (nutritional)", "Horsepower (metric) hour", "Btu (IT)", "Btu (th)", 
@@ -25,6 +34,20 @@ public abstract class UnitCategories
                 "Gram-force centimeter", "Kilogram-force centimeter", "Kilogram-force meter", "Kilopond meter", "Pound-force foot", "Pound-force inch",
                 "Ounce-force inch", "Foot-pound", "Inch-pound", "Inch-ounce", "Poundal foot", "Therm", "Therm (EC)", "Therm (US)", "Hartree energy", 
                 "Rydberg constant"
+            ]
+        },
+        {
+            "Fuel",
+              [
+                "meter/liter [m/L]", "exameter/liter [Em/L]", "petameter/liter [Pm/L]", "terameter/liter [Tm/L]",
+                "gigameter/liter [Gm/L]", "megameter/liter [Mm/L]", "kilometer/liter [km/L]", "hectometer/liter [hm/L]",
+                "dekameter/liter [dam/L]", "centimeter/liter [cm/L]", "mile (US)/liter [mi/L]", "nautical mile/liter [n.mile/L]",
+                "nautical mile/gallon (US)", "kilometer/gallon (US)", "meter/gallon (US)", "meter/gallon (UK)",
+                "mile/gallon (US)", "mile/gallon (UK)", "meter/cubic meter [m/m^3]", "meter/cubic centimeter",
+                "meter/cubic yard [m/yd^3]", "meter/cubic foot [m/ft^3]", "meter/cubic inch [m/in^3]", "meter/quart (US)",
+                "meter/quart (UK)", "meter/pint (US) [m/pt (US)]", "meter/pint (UK) [m/pt (UK)]", "meter/cup (US)",
+                "meter/cup (UK)", "meter/fluid ounce (US)", "meter/fluid ounce (UK)", "liter/meter [L/m]",
+                "liter/100 km [L/100 km]", "gallon (US)/mile", "gallon (US)/100 mi", "gallon (UK)/mile", "gallon (UK)/100 mi"
             ]
         },
         {

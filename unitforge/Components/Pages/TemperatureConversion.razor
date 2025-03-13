@@ -13,7 +13,7 @@
 </HeadContent>
 
 <div class="container my-5 text-center text-white">
-    <h1>Temperature Converter</h1>
+    <h1>Free Online Temperature Conversion Tool</h1>
     <p class="mb-5">Convert from one temperature type to another</p>
 
     <div class="card rounded-5 mx-auto p-3">
@@ -25,13 +25,14 @@
                 <td><label for="toVal"><h4>To</h4></label></td>
             </tr>
             <tr>
-                <td><input class="form-control" type="text" id="fromVal" placeholder="Enter a value" @oninput="OnInputChange" /></td>
+                <td><input class="form-control" type="text" id="fromVal" placeholder="Enter a unit of temperature" @oninput="OnInputChange" /></td>
                 <td></td>
                 <td><input class="form-control" type="text" id="toVal" value="@_outputValue" disabled /></td>
             </tr>
             <tr>
                 <td style="padding-top:8px;">
                     <select class="form-select ucselect" id="calFrom" size="11" @onchange="OnUnitChangeFrom">
+                        <option value="" selected>Select a unit</option>
                         @foreach (var unit in _fromUnits)
                         {
                             <option value="@unit">@unit</option>
@@ -41,6 +42,7 @@
                 <td></td>
                 <td style="padding-top:8px;">
                     <select class="form-select ucselect" id="calTo" size="11" @onchange="OnUnitChangeTo">
+                        <option value="" selected>Select a unit</option>
                         @foreach (var unit in _toUnits)
                         {
                             <option value="@unit">@unit</option>

@@ -14,11 +14,11 @@
 </HeadContent>
 
 <div class="container my-5 text-center text-white">
-    <h1>Unit Converter</h1>
+    <h1>Free Online @_selectedCategory Conversion Tool</h1>
     <p class="mb-5">Easily convert any unit from one type to another</p>
 
     <div class="row my-4">
-        @foreach (var category in UnitCategories.Categories.Keys)
+        @foreach (var category in _allowedCategories)
         {
             <div class="col my-3">
                 <button class="custom-button-outline w-100 @(category == _selectedCategory ? "isActive" : "")" @onclick="() => SelectCategory(category)">@category</button>
@@ -37,13 +37,14 @@
                     <td><label for="toVal"><h4>To</h4></label></td>
                 </tr>
                 <tr>
-                    <td><input class="form-control" type="text" id="fromVal" placeholder="Enter a value" @oninput="OnInputChange" /></td>
+                    <td><input class="form-control" type="text" id="fromVal" placeholder=@("Enter a unit of " + _selectedCategory) @oninput="OnInputChange" /></td>
                     <td></td>
                     <td><input class="form-control" type="text" id="toVal" value="@_outputValue" disabled /></td>
                 </tr>
                 <tr>
                     <td style="padding-top:8px;">
                         <select class="form-select ucselect" id="calFrom" size="11" @onchange="OnUnitChangeFrom" placeholder="Select a type">
+                            <option value="" selected>Select a unit</option>
                             @foreach (var unit in _fromUnits)
                             {
                                 <option value="@unit">@unit</option>
@@ -53,6 +54,7 @@
                     <td></td>
                     <td style="padding-top:8px;">
                         <select class="form-select ucselect" id="calTo" size="11" @onchange="OnUnitChangeTo" placeholder="Select a type">
+                            <option value="" selected>Select a unit</option>
                             @foreach (var unit in _toUnits)
                             {
                                 <option value="@unit">@unit</option>

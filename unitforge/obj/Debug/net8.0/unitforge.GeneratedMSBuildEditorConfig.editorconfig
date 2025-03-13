@@ -30,8 +30,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcmVhQ29udmVyc2lvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/DataStorageConversion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYXRhU3RvcmFnZUNvbnZlcnNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/EnergyConversion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbmVyZ3lDb252ZXJzaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/FuelConsumptionConversion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGdWVsQ29uc3VtcHRpb25Db252ZXJzaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lewis/Documents/GitHub/unitforge/unitforge/Components/Pages/Home.razor]

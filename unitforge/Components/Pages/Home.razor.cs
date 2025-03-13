@@ -12,9 +12,6 @@ public partial class Home : ComponentBase
     public IAreaConversionService? AreaConversionService { get; set; }
     
     [Inject]
-    public IEnergyConversionService? EnergyConversionService { get; set; }
-    
-    [Inject]
     public ILengthConversionService? LengthConversionService { get; set; }
     
     [Inject]
@@ -36,6 +33,7 @@ public partial class Home : ComponentBase
     private IJSRuntime? Js { get; set; }
 
     private string _selectedCategory =  "Length";
+    private string[] _allowedCategories =  ["Area", "Length", "Pressure", "Temperature", "Time", "Volume", "Weight"];
     
     private List<string> _fromUnits = [..UnitCategories.Categories["Length"]];
     private List<string> _toUnits = [..UnitCategories.Categories["Length"]];
@@ -91,7 +89,6 @@ public partial class Home : ComponentBase
             _outputValue = _selectedCategory switch
             {
                 "Area" => AreaConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
-                "Energy" => EnergyConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Length" => LengthConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Pressure" => PressureConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
                 "Temperature" => TemperatureConversionService!.Convert(inputValue, _fromUnit, _toUnit).ToString(CultureInfo.InvariantCulture),
